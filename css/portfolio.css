@@ -1,4 +1,5 @@
 body {
+    font-family: Arial, Helvetica, sans-serif;
     background: black;
     color: white;
     max-width: max-content;
@@ -8,7 +9,6 @@ body {
 h1 {
     text-align: center;
     font-size: 2.5em;
-    font-family: Arial, Helvetica, sans-serif;
     text-shadow:
         -0.044em 0.034em #F08B00,
         -0.040em 0.030em #F08B00,
@@ -19,15 +19,19 @@ h1 {
         -0.015em 0.005em #F08B00
 }
 
-/* .tag {
-    display: inline;
-    float: left;
-} */
+#description {
+    -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+    max-width: 50vw;
+    max-height: 15vh;
+    color: gray;
+    overflow: hidden;
+}
+
 .tag p {
     display: inline-block;
     font-weight: bold;
     font-size: 0.8em;
-    font-family: Arial, Helvetica, sans-serif;
     width: 3.5em;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
@@ -76,9 +80,35 @@ img {
 
 }
 
-img:hover {
+.button {
+font-size: medium;
+font-weight:600;
+    height: 2em;
+    width: 100%;
+    color: white;
+    background-color: #F08B00;
+    border-color: white;
+    border-width: 1px;
+    box-shadow:
+    0.200em 0.200em #F08B00,
+    0.190em 0.190em #F08B00,
+        0.180em 0.180em #F08B00,
+        0.170em 0.170em #F08B00,
+        0.160em 0.160em #F08B00,
+        0.150em 0.150em #F08B00,
+        0.140em 0.140em #F08B00,
+        0.120em 0.120em #F08B00,
+        0.1em 0.100em #F08B00;
+}
+
+.button:active {
+    transform: translate(0.2em, 0.2em);
+    box-shadow: none;
+}
+
+/* img:hover {
     padding-left: 1em;
     padding-top: 1em;
     box-shadow: none;
     cursor: pointer;
-}
+} */
