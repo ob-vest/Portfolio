@@ -1,3 +1,11 @@
+html {
+    scroll-behavior: smooth;
+}
+section {
+    margin-bottom: 200px;
+}
+
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     background: black;
@@ -19,13 +27,34 @@ h1 {
         -0.015em 0.005em #F08B00
 }
 
-#description {
+#introduction {
+    max-width: 50vw;
+    color: gray;
+}
+
+#description-fadeout {
     -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
     mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
     max-width: 50vw;
     max-height: 15vh;
     color: gray;
     overflow: hidden;
+}
+
+.horizontalButtons {
+  
+    float: left;
+    display: flex;
+    max-width: 100%;
+    width: 100%;
+}
+
+.horizontalButtons form {
+    width: 100%;
+    margin-right: 10px;
+}
+.horizontalButtons .button {
+    margin: 10px;
 }
 
 .tag p {
@@ -55,7 +84,8 @@ h1 {
 }
 
 img {
-    margin: 20px 20px;
+
+    margin: 20px 0px;
     width: 50vw;
     box-shadow:
         1.0em 1.0em #F08B00,
@@ -81,8 +111,9 @@ img {
 }
 
 .button {
-font-size: medium;
-font-weight:600;
+
+    font-size: medium;
+    font-weight: 600;
     height: 2em;
     width: 100%;
     color: white;
@@ -90,8 +121,8 @@ font-weight:600;
     border-color: white;
     border-width: 1px;
     box-shadow:
-    0.200em 0.200em #F08B00,
-    0.190em 0.190em #F08B00,
+        0.200em 0.200em #F08B00,
+        0.190em 0.190em #F08B00,
         0.180em 0.180em #F08B00,
         0.170em 0.170em #F08B00,
         0.160em 0.160em #F08B00,
