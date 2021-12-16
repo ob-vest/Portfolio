@@ -1,0 +1,44 @@
+.portrait img {
+    float: left;
+    margin: 10px 10px;
+    /* width: 10vw; */
+    min-width: 80px;
+    width: 10vw;
+    /* max-width: 92px; */
+    box-shadow:
+      
+        0.650em 0.650em #F08B00,
+        0.600em 0.600em #F08B00,
+        0.550em 0.550em #F08B00,
+        0.500em 0.500em #F08B00,
+        0.450em 0.450em #F08B00,
+        0.400em 0.400em #F08B00,
+        0.350em 0.350em #F08B00,
+        0.300em 0.300em #F08B00,
+        0.250em 0.250em #F08B00,
+        0.200em 0.200em #F08B00,
+        0.150em 0.150em #F08B00,
+        0.1em 0.100em #F08B00;
+}
+.portrait {
+
+    height: 138px;
+    width: 50vw;
+}
+.portrait h1 {
+    text-align: left !important;
+    margin: 10px;
+    /* float: left; */
+
+}
+.portrait h2{
+    margin: 10px;
+    /* float: left; */
+color: #F08B00;
+font-size: 12pt;
+
+}
+.verticalText {
+    display: block; 
+    float: left;
+}
