@@ -94,11 +94,16 @@ h1 {
     color: #05689D;
     background-color: #05689d5b;
 }
+.swift {
+    color: #e34d35;
+    background-color: #e34c355b;
+}
 
 .js {
     color: yellow;
     background-color: rgba(255, 255, 0, 0.35);
 }
+
 
 .large {
     margin: 20px 0px;
