@@ -35,7 +35,7 @@ h1 {
     color: gray;
 }
 
-#description-fadeout {
+.description-fadeout {
     -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
     mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
     min-width: 274px;
@@ -85,17 +85,17 @@ h1 {
     margin: 5px;
 }
 
-#html {
+.html {
     color: #BF6000;
     background-color: #bf5f0056;
 }
 
-#css {
+.css {
     color: #05689D;
     background-color: #05689d5b;
 }
 
-#js {
+.js {
     color: yellow;
     background-color: rgba(255, 255, 0, 0.35);
 }
