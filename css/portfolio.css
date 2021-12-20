@@ -1,13 +1,15 @@
 html {
     scroll-behavior: smooth;
 }
+
 section {
     margin-bottom: 100px;
 }
 
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 10px;
+    font-family: Helvetica, Arial, sans-serif;
     background: black;
     color: white;
     max-width: max-content;
@@ -36,24 +38,38 @@ h1 {
 #description-fadeout {
     -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
     mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+    min-width: 274px;
     max-width: 50vw;
     max-height: 15vh;
     color: gray;
     overflow: hidden;
 }
 
-.horizontalButtons {
-  
-    float: left;
-    display: flex;
-    max-width: 100%;
-    width: 100%;
+@media screen and (min-width: 900px) {
+    /* Only applies when its over a certain width. will make the buttons move to the right. */
+    .info-and-buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+    }
 }
+@media screen and (max-width: 900px) {
+    /* Button at the bottom and horizontally aligned only at certain width */
+    .horizontalButtons {
+
+        float: left;
+        display: flex;
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
 
 .horizontalButtons form {
     width: 100%;
     margin-right: 10px;
 }
+
 .horizontalButtons .button {
     margin: 10px;
 }
@@ -83,6 +99,7 @@ h1 {
     color: yellow;
     background-color: rgba(255, 255, 0, 0.35);
 }
+
 .large {
     margin: 20px 0px;
     min-width: 274px;
@@ -109,6 +126,7 @@ h1 {
         0.1em 0.100em #F08B00;
 
 }
+
 /* img { */
 /* 
     margin: 20px 0px;
@@ -162,6 +180,35 @@ h1 {
 .button:active {
     transform: translate(0.2em, 0.2em);
     box-shadow: none;
+}
+
+footer p {
+    color: #F08B00;
+}
+
+@media screen and (max-width: 900px) {
+
+    /* Hides navbar if its under a certain threshhold. Small screens wont see nav bar */
+    .hideorshow {
+        display: none;
+    }
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    /* width: 100%; */
+}
+
+nav a {
+    margin: 10px;
+    text-decoration: none;
+    color: #F08B00;
+}
+
+nav {
+    border-right: none;
 }
 
 /* img:hover {

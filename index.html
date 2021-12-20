@@ -6,6 +6,7 @@
     <meta name="description"
         content="Her kan du læse Onur Bas´ portfolio, heraf tidligere erfaring og personlige historie">
     <meta name="keywords" content="Portfolio, Onur, HTML, JS, CSS, hjemmeside, multimediedesigner, projekter">
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,20 +15,28 @@
 </head>
 
 <body>
+    <nav class="hideorshow">
+        <a href="/index.html?#down">Projekter</a>
+        <a href="/aboutme.html">Om mig</a>
+    </nav>
     <section>
         <h1>Onur Bas</h1>
-        <p id="introduction">
-            Jeg er en multimediestuderende i Zealand Academy og jeg bruger en del af min fritid på at kode og videreudvikle mine IT-færdigheder.
-            Jeg har kendskab til HTML, CSS, Javascript og Swift. Hvor jeg har bygget mobilapplikationer og hjemmesider.
+        <div class="info-and-buttons">
+            <p id="introduction">
+                Jeg er en multimediestuderende i Zealand Academy og jeg bruger en del af min fritid på at kode og
+                videreudvikle mine IT-færdigheder.
+                Jeg har kendskab til HTML, CSS, Javascript og Swift. Hvor jeg har bygget mobilapplikationer og
+                hjemmesider.
 
-        </p>
-        <div class="horizontalButtons">
-            <form action="#down">
-                <button class="button">Se projekter</button>
-            </form>
-            <form action="/projects/plantasia.html"> 
-            <button class="button">Læs mere</button>
-        </form>
+            </p>
+            <div class="horizontalButtons">
+                <form action="#down">
+                    <button class="button">Se projekter</button>
+                </form>
+                <form action="/aboutme.html">
+                    <button class="button">Læs mere</button>
+                </form>
+            </div>
         </div>
 
     </section>
@@ -37,7 +46,7 @@
 
     <section id="down">
         <h1>Projekter</h1>
-        <img src="/img/plantasia/plantasia1.png" class="large" alt="Plantasia Projektbillede" >
+        <img src="/img/plantasia/plantasia1.png" class="large" alt="Plantasia Projektbillede">
         <div class="tag">
             <p id="html">HTML</p>
             <p id="css">CSS</p>
@@ -51,14 +60,50 @@
             appen kan bruge til at påminde brugeren, hvornår planten skal vandes.
             Idéen og produktarbejdet er opnået ved brug af design thinking.
         </p>
-        <form action="/projects/plantasia.html"> 
-        <button class="button">Gå til projekt</button>
+        <form action="/projects/plantasia.html">
+            <button class="button">Gå til projekt</button>
+        </form>
+        <img src="/img/bollywood/bollywood.png" class="large" alt="Bollywood projektbillede">
+        <div class="tag">
+            <p id="html">HTML</p>
+            <p id="css">CSS</p>
+            <p id="js">JS</p>
+        </div>
+        <h2>Bollywood</h2>
+        <p id="description-fadeout">
+            Vi har lavet en hjemmeside for en danseskole, hvor vores målgruppen er kvinder. Vi lavet en prototype af en
+            hjemmeside, hvor man kan købe medlemskab, indisk/bollywood udklædning.
+            Vi har gjort brug af design thinking og har primært fokuseret i hvem vores kunder herunder metoder for at se
+            det fra kundens perspektiv.(personaer) og hvilken tema.
+        </p>
+        <form action="/projects/bollywood.html">
+            <button class="button">Gå til projekt</button>
+        </form>
+        <img src="/img/rumrejsen/rumrejsen.png" class="large" alt="Plantasia Projektbillede">
+        <div class="tag">
+            <p id="html">HTML</p>
+            <p id="css">CSS</p>
+        </div>
+        <h2>Rumrejsen</h2>
+        <p id="description-fadeout">
+            Jeg har været med til at lave en ekstraordinær (fiktiv) rumrejse, hvor opgaven gik ud på at være kreativ og
+            finde på en fed koncept uanset hvor urealistisk det end nu lyder. Vi tilbød en 70’er fest i rummet. Som
+            foregik gennem Solar Spirit, som har en kontrakt med Danmarks nationale rumraket program, og vi derfor kunne
+            sende folk ud der havde råd til en billet, ud i rummet med andre, på en rejse med både festlighed og
+            oplevelse på kortet.
+        </p>
+        <form action="/projects/rumrejsen.html">
+            <button class="button">Gå til projekt</button>
         </form>
     </section>
     <!-- <section>
         <h1>Contact</h1>
 
     </section> -->
+    <footer>
+        <p><small>© 2021 Onur Bas.</small></p>
+    </footer>
 </body>
+
 
 </html>
